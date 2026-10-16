@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    background-color: #FBFBF2;
+    font-family: "Verdana", sans-serif;
+    color: #0E1C36;
+}
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 1.5rem;
+    background-color: #80A4ED; 
+    overflow: visible;
+}
+
+
+nav .logo-container img{
+    block-size: 3rem;
+    object-fit: contain;
+    width: auto;
+}
+
+ul.vertical-nav-bar {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav a {
+    display: block;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #FBFBF2;
+}
+
+nav a:hover {
+    color: #C96480;
+    
+}
+
+.vertical-nav-bar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.vertical-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-nav-bar li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.vertical-nav-bar li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.vertical-nav-bar li a {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.section_2{
+    display: flex;
+    align-items: center;
+}
+.image-container {
+    align-self: start;       /* don't stretch to the row height */
+    padding: 1rem;
+    background-color: #80A4ED;
+    border-radius: 2rem;
+    max-width: 400px;        /* size limit lives on the frame now */
+}
+
+.gato-sitting {
+    display: block;          /* removes the small gap under inline images */
+    width: 100%;
+    height: auto;            /* this is what keeps the aspect ratio */
+    border-radius: 1rem;     /* so the white corners match the frame */
+}
+
+.button {
+    display: block;
+    width: 120px;
+    padding: 15px 0;
+    margin: 2rem auto;
+    background-color: #C96480;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0E1C36;
+}
+
+.button:hover {
+    color: #FBFBF2;
+}
+
+
+
+footer {
+    background-color: #80A4ED;
+    color: #FBFBF2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-control input {
+    padding: 10px;
+    border: 2px solid #80A4ED;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.input-control.error input {
+    border-color: #C96480; /* Red/pink border on error */
+}
+
+.input-control.success input {
+    border-color: #2e7d32; /* Green border on success */
+}
+
+.input-control .error {
+    color: #C96480;
+    font-size: 0.85rem;
+    height: 15px;
+    margin-top: 4px;
+}
+.form-section {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.form-section h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #80A4ED;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+button.button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+
+
+.register-art {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); /* lets columns actually shrink */
+    align-items: center;
+    justify-items: center;
+    gap: 10rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.greeting-cat {
+    width: 100%;
+    max-width: 1000px;   
+    height: 50%;       /* keeps aspect ratio */
+    max-height: 500vh;   /* stops it dominating tall screens */
+    object-fit: contain;
+    align-self: start;       /* don't stretch to the row height */
+    padding: 1rem;
+    background-color: #80A4ED;
+    border-radius: 2rem;
+    max-width: 400px;  
+}
+.waving_Gato_9 {
+    background: #80A4ED; 
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-control input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Leaderboard Section Styles */
+.leaderboard-section {
+    text-align: center;
+}
+
+.leaderboard-section h1 {
+    color: #0E1C36;
+    margin-bottom: 0.5rem;
+}
+
+.leaderboard-section p {
+    margin-bottom: 1.5rem;
+}
+
+/* Table Styling */
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.leaderboard-table th {
+    background-color: #80A4ED;
+    color: #FBFBF2;
+    padding: 14px 16px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.leaderboard-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #0E1C36;
+}
+
+/* Alternating Row Colors */
+.leaderboard-table tbody tr:nth-child(even) {
+    background-color: #f2f4f8;
+}
+
+.leaderboard-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect on rows */
+.leaderboard-table tbody tr:hover {
+    background-color: #e8eeeb;
+}
+
+/* Rank 1 highlight */
+.leaderboard-table tbody tr:first-child td {
+    font-weight: bold;
+    color: #C96480;
+}
+
+/* Empty State Box */
+.no-scores {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px dashed #80A4ED;
+}
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script defer src="../JS/nav.js"></script>
+    <script defer src="../JS/register.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="Logo">
+            </div>
+           <ul class="vertical-nav-bar">
+    <li><img src="../images/games.png" alt=""><a href="game.html">Game</a></li>
+    <li><img src="../images/logo.png" alt=""><a href="index.html">About Us</a></li>
+    
+    <!-- Logged-out links -->
+    <li id="nav-login-li"><img src="../images/user.png" alt=""><a href="login.html">Log In</a></li>
+    <li id="nav-register-li"><img src="../images/register.png" alt=""><a href="register.html">Register</a></li>
+    
+    <!-- Logged-in link (hidden initially) -->
+    <li id="nav-logout-li" hidden><img src="../images/logout.png" alt=""><a href="#" id="nav-logout-btn">Log Out</a></li>
+    
+    <li><img src="../images/ranking.png" alt=""><a href="rankings.html">Rankings</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <main> 
+        <div class="register-art">
+        <section class="form-section">
+            <h1>Register</h1>
+            <form id="register-form" novalidate>
+                
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" inputmode="numeric">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                    <div class="error"></div>
+                </div>
+
+                <button type="submit" class="button">Register</button>
+            </form>
+<div class = "login-button">
+            <p>Already have an account? <a href="login.html" class="button">Log In</a></p>
+            </div>
+        </section>
+        <section class="waving_Gato_9">
+        <img src="/images/gato-cat/waving_Gato-9.png" class="greeting-cat">
+    </section>
+    </div>
+    </main>
+<footer>
+        <p>CST2120 Coursework 1, 2026-27 | Middlesex University Dubai</p>
+        <p>Created by Khalisah Kazi.</p>
+    </footer>
+
+</body>
+</html>
