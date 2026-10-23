@@ -34,3 +34,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// --- Auth UI & Navigation Helper Functions ---
+function updateAuthUI() {
+    const currentUser = localStorage.getItem('gato_current_user');
+    const loggedInElements = document.querySelectorAll('.logged-in-only');
+    const loggedOutElements = document.querySelectorAll('.logged-out-only');
+
+    if (currentUser) {
+        loggedOutElements.forEach(el => el.classList.add('hidden'));
+        loggedInElements.forEach(el => el.classList.remove('hidden'));
+    } else {
+        loggedOutElements.forEach(el => el.classList.remove('hidden'));
+        loggedInElements.forEach(el => el.classList.add('hidden'));
+    }
+}
+
+// Attach logout button listener
+const logoutBtn = document.getElementById('nav-logout-btn');
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', function() {
+        localStorage.removeItem('gato_current_user');
+        updateAuthUI();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', updateAuthUI);

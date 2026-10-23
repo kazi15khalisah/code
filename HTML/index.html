@@ -10,24 +10,25 @@
     <title>Home - Aqui Comes The Gato</title>
 </head>
 <body>
-    <header>
+
+        <header>
         <nav>
-            <div class="logo-container">
-                <img src="../images/logo.png" alt="Logo">
-            </div>
-          <ul class="vertical-nav-bar">
-    <li><img src="../images/games.png" alt=""><a href="game.html">Game</a></li>
-    <li><img src="../images/logo.png" alt=""><a href="index.html">About Us</a></li>
-    
-    <!-- Logged-out links -->
-    <li id="nav-login-li"><img src="../images/user.png" alt=""><a href="login.html">Log In</a></li>
-    <li id="nav-register-li"><img src="../images/register.png" alt=""><a href="register.html">Register</a></li>
-    
-    <!-- Logged-in link (hidden initially) -->
-    <li id="nav-logout-li" hidden><img src="../images/logout.png" alt=""><a href="#" id="nav-logout-btn">Log Out</a></li>
-    
-    <li><img src="../images/ranking.png" alt=""><a href="rankings.html">Rankings</a></li>
-</ul>
+    <div class="logo-container">
+        <img src="../images/logo.png" alt="Logo">
+    </div>
+    <ul class="vertical-nav-bar">
+        <li><img src="../images/games.png" alt=""><a href="game.html">Game</a></li>
+        <li><img src="../images/logo.png" alt=""><a href="index.html">About Us</a></li>
+        
+        <!-- Logged-out links (visible ONLY when logged out) -->
+        <li class="logged-out-only"><img src="../images/user.png" alt=""><a href="login.html">Log In</a></li>
+        <li class="logged-out-only"><img src="../images/register.png" alt=""><a href="register.html">Register</a></li>
+        
+        <!-- Logged-in link (visible ONLY when logged in, starts hidden) -->
+        <li class="logged-in-only hidden"><img src="../images/logout.png" alt=""><a href="#" id="nav-logout-btn">Log Out</a></li>
+        
+        <li><img src="../images/ranking.png" alt=""><a href="rankings.html">Rankings</a></li>
+    </ul>
 </nav>
     </header>
 
