@@ -88,6 +88,11 @@ nav a:hover {
   font-size: 1.1rem;
   line-height: 1;
 }
+
+.hidden {
+    display: none !important;
+}
+
 main {
     flex: 1;
     max-width: 900px;
