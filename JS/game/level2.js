@@ -1,0 +1,1 @@
+import BootScene from '/JS/game/BootScene.js';

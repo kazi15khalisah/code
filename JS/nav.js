@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // --- Auth UI & Navigation Helper Functions ---
 function updateAuthUI() {
-    const currentUser = localStorage.getItem('gato_current_user');
+    const currentUser = localStorage.getItem('loggedInUser');
     const loggedInElements = document.querySelectorAll('.logged-in-only');
     const loggedOutElements = document.querySelectorAll('.logged-out-only');
 

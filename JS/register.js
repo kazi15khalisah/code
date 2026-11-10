@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = document.getElementById('password');
     const confirm_password = document.getElementById('confirm_password');
 
-    // 1. Submit Listener: Runs when user clicks Register or hits Enter
+    // 1. when user clicks Register or hits Enter
     form.addEventListener('submit', (e) => {
-        e.preventDefault(); // 🛑 Stop page refresh
+        e.preventDefault(); 
 
         // Validate inputs and display error text under missing fields
         if (validateInputs()) {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Save new user in JSON format
         existingUsers.push(newUser);
         localStorage.setItem('users', JSON.stringify(existingUsers));
-        localStorage.setItem('gato_current_user', newUser.username);
+        localStorage.setItem('current_user', newUser.username);
 
         // Redirect to game page
         window.location.href = 'game.html';

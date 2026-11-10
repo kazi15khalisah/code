@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqui Comes The Gato - Game</title>
     <link rel="stylesheet" href="../CSS/styles.css">
-    
-      <!-- Local Phaser Library (Capital JS) -->
-    <script src="JS/lib/phaser.min.js"></script>
-    
-    <!-- Shared Navigation Bar Script (Capital JS) -->
-    <script defer src="JS/nav.js"></script>
-    
-    <!-- Main ES6 Module Entry Point (Capital JS) -->
-    <script type="module" src="JS/game/main.js"></script>
+    <!-- Local Phaser Library -->
+    <script src="../JS/lib/phaser.min.js"></script>
+    <!-- Shared Navigation Bar Script -->
+    <script defer src="../JS/nav.js"></script>
+     
 </head>
 <body>
     <header>
@@ -38,9 +34,14 @@
     </header>
 
     <main class="game-wrapper">
-        <!-- Container where Phaser will draw the game screen -->
-        <div id="phaser-game-container"></div>
-    </main>
+    <div id="game-container">
+         <script type="module" src="/JS/game/main.js">
+           
+
+         </script>
+    </div>
+  
+</main>
 
     <footer>
         <p>CST2120 Coursework 1, 2026-27 | Middlesex University Dubai</p>
